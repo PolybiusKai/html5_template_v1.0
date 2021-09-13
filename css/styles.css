@@ -29,7 +29,7 @@ img {
 }
 
 /* 
-    Main Header and Navigation
+    Main Header, Navigation and Footer
 */
 
 header {
@@ -75,6 +75,15 @@ header {
     color: #202731;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.copy {
+   margin-top: 1rem;
+}
+
 /* 
     Main Content
 */
@@ -87,6 +96,8 @@ header {
     text-align: center;
     padding-top: 45vh;
 }
+
+
 
 /* 
     Buttons
