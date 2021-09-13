@@ -78,10 +78,12 @@ header {
 footer {
     display: flex;
     justify-content: center;
+    /* background-color: #dd3f31; */
 }
 
 .copy {
     margin-top: 1rem;
+    /* color: #eee; */
     color: #888;
 }
 
