@@ -1,0 +1,125 @@
+/* 
+    Theme Name: Basic HTML5/CSS3/JS Boilerplate
+    Author: RobSm!th
+*/
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    user-select: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+
+}
+
+html body {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 
+    Main Header and Navigation
+*/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #dd3f31;
+    padding: 20px 10%;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.nav_links {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav_links a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #eee;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nav_links a:hover {
+    color: #202731;
+}
+
+.nav_links a.active {
+    color: #202731;
+}
+
+/* 
+    Main Content
+*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 45vh;
+}
+
+/* 
+    Buttons
+*/
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    color: #eee;
+    background-color: transparent;
+    border-color: #eee;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f9fa;
+    color: #000;
+    border-color: #dae0e5;
+}
