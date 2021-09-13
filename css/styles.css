@@ -81,7 +81,8 @@ footer {
 }
 
 .copy {
-   margin-top: 1rem;
+    margin-top: 1rem;
+    color: #888;
 }
 
 /* 
@@ -134,4 +135,32 @@ footer {
     background-color: #f8f9fa;
     color: #000;
     border-color: #dae0e5;
+}
+
+/* 404 Page */
+.four_h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.four_p {
+    margin: 0 auto;
+    color: #888;
+    width: 280px;
+}
+
+/* Media Quiries */
+@media only screen and (max-width: 280px) {
+
+    body,
+    .four_p {
+        width: 95%;
+    }
+
+    .four_h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+    }
+
 }
