@@ -7,6 +7,7 @@ This is a basic five page small-business HTML5 boilerplate template with a navig
 To start working on a project with this template simply download the file folder to your projects directory 
 or you can use...
 
-> git clone git@github.com:PolybiusKai/html5_template_v1.0.git
-
+```
+git clone git@github.com:PolybiusKai/html5_template_v1.0.git
+```
 
