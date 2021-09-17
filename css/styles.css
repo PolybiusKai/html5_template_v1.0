@@ -16,7 +16,6 @@
 body {
     font-family: sans-serif;
     background-color: #eee;
-
 }
 
 html body {
@@ -61,25 +60,55 @@ header {
 .nav_links a {
     padding: 0 .5rem;
     text-decoration: none;
-    color: #eee;
+    color: rgba(255, 255, 255, .55);
     letter-spacing: 0.1rem;
     font-weight: 400;
     font-size: .9rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav_links a:hover {
-    color: #202731;
+    color: rgba(255,255,255,.75);
 }
 
 .nav_links a.active {
-    color: #202731;
+    color: #fff;
+}
+
+.text-muted {
+	--bs-text-opacity: 1;
+	color: #6c757d !important;
+}
+
+.s-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1.5rem;
     /* background-color: #dd3f31; */
 }
+
+footer nav {
+    display: flex;
+}
+
+.justify-content-end {
+	justify-content: flex-end !important;
+}
+
+.col-md-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}   
 
 .copy {
     margin-top: 1rem;
@@ -100,11 +129,10 @@ footer {
     padding-top: 45vh;
 }
 
-
-
 /* 
     Buttons
 */
+
 .btn {
     display: inline-block;
     background-color: transparent;
@@ -123,8 +151,7 @@ footer {
     line-height: 1.5;
     border-radius: 0.25rem;
     text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-secondary {
@@ -140,6 +167,7 @@ footer {
 }
 
 /* 404 Page */
+
 .four_h1 {
     color: #555;
     font-size: 2em;
@@ -153,16 +181,13 @@ footer {
 }
 
 /* Media Quiries */
-@media only screen and (max-width: 280px) {
 
-    body,
-    .four_p {
+@media only screen and (max-width: 280px) {
+    body, .four_p {
         width: 95%;
     }
-
     .four_h1 {
         font-size: 1.5em;
         margin: 0 0 0.3em;
     }
-
 }
