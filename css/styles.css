@@ -15,7 +15,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 html body {
@@ -96,11 +96,10 @@ header {
 footer {
     display: flex;
     align-items: center;
-    padding: .8rem 10%;
-    margin: 1.5rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
     /* background-color: #dd3f31; */
 }
-
 
 
 footer .nav {
@@ -133,8 +132,7 @@ footer a {
 
 .container {
     width: 100%;
-    padding-right: .75rem;
-    padding-left: .75rem;
+    padding: .8rem 10%;
     margin: 0 auto;
 }
 
