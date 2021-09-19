@@ -7,11 +7,11 @@
     <meta name="author" content="RobSm!th">
     <meta name="description" content="A basic responsive web page">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Services</title>
 
-    <!-- CSS/Bootstrap/Favicon -->
+    <!-- CSS/Bootstrap/Favicon/Fontawesome -->
     <link rel="icon" href="favicon.ico" type="image">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_ninja/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_ninja/favicon-32x32.png">
@@ -19,7 +19,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 
         <!-- Start of Navigation -->
         <nav class="nav_links">
-            <a href="index.html">Home</a>
+            <a  href="index.html">Home</a>
             <a href="work.html">Work</a>
             <a class="active" href="services.html">Services</a>
             <a href="about.html">About</a>
@@ -40,35 +40,50 @@
 
     </header>
 
-    <section class="hero">
-        <h1>Hello World</h1>
-        <p>Welcome to the Services page.</p>
-    </section>
-    
-    <!-- Footer Section -->
-    <div class="s-divider"></div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-               <i class="bi bi-bootstrap"></i>
-            </a>
-            <span class="text-muted">
-                <p class="copy">© 2020 RobSm!th</p>
-            </span>
+    <section class="container hero">
+        <i class="logo-2 bi bi-bootstrap-fill"></i>
+        <h1 class="display-5 hero-txt">Hello World</h1>
+        <p class="lead hero-txt">Welcome to the Services page.</p>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead hero-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolorum quo, quidem
+                perspiciatis, provident placeat non in eligendi asperiores aperiam atque corporis reprehenderit
+                voluptatum maxime saepe quos vitae, suscipit ducimus.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                <button type="button" class="btn btn-secondary btn-lg px-4">Secondary</button>
+            </div>
         </div>
+    </section>
 
-        <nav class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <a class="text-muted" href="#"><i class="bi bi-facebook"></i></a>
-            <a class="text-muted" href="#"><i class="bi bi-instagram"></i></a>
-            <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>
-        </nav>
-    </footer>
+    <div class="s-divider"></div>
+    <!-- Footer Section -->
+    <div class="container">
+        <footer class="flex-wrap justify-content-between border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="text-muted lh-1">
+                    <i class="bi bi-bootstrap"></i>
+                </a>
+                <span class="text-muted">
+                    <p class="copy">© 2020 RobSm!th</p>
+                </span>
+            </div>
+
+            <nav class="nav col-md-4 justify-content-end d-flex">
+                <a class="text-muted" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="text-muted" href="#"><i class="bi bi-instagram"></i></a>
+                <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>
+            </nav>
+        </footer>
+    </div>
+
 
     <!-- /Footer Section -->
+
 
     <!-- Optional JavaScript -->
     <!-- <script src="js/main.js"></script> -->
     <script src="https://kit.fontawesome.com/6d0ef8f08a.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
     background-color: #fff;
 }
 
@@ -27,6 +27,7 @@ img {
     max-width: 100%;
 }
 
+
 /* 
     Main Header, Navigation and Footer
 */
@@ -38,7 +39,6 @@ header {
     background-color: #dd3f31;
     padding: .8rem 10%;
     width: 100%;
-    position: fixed;
 }
 
 .logo {
@@ -50,6 +50,10 @@ header {
 .logo a {
     text-decoration: none;
     color: #eee;
+}
+
+.logo-2 {
+    font-size: 3.5rem;
 }
 
 .nav_links {
@@ -80,12 +84,14 @@ header {
 */
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
-    padding-top: 45vh;
+    margin: 3rem 0 !important;
+}
+
+.hero-txt {
+    margin-bottom: 1.5rem !important;
 }
 
 
@@ -148,6 +154,11 @@ footer a {
     align-items: center !important;
 }
 
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
 .text-muted {
     --bs-text-opacity: 1;
     color: #6c757d !important;
@@ -166,6 +177,17 @@ footer a {
     width: 33.33333333%;
 }
 
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.display-5 {
+    font-size: 3rem;
+    font-weight: 700 !important;
+    line-height: 1.2;
+}
+
 .border-top {
     border-top: 1px solid #dee2e6 !important;
 }
@@ -180,6 +202,11 @@ footer a {
 
 .lh-1 {
     line-height: 1 !important;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 /* 
@@ -207,16 +234,28 @@ footer a {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #009766;
+    border-color: #009766;
+}
+
+.btn-primary:hover {
+    background-color: #008a5e;
+    color: #fff;
+    border-color: #008a5e;
+}
+
 .btn-secondary {
-    color: #eee;
+    color: #dd3f31;
     background-color: transparent;
-    border-color: #eee;
+    border-color: #dd3f31;
 }
 
 .btn-secondary:hover {
-    background-color: #f8f9fa;
-    color: #000;
-    border-color: #dae0e5;
+    background-color: #dd3f31;
+    color: #fff;
+    border-color: #dd3f31;
 }
 
 /* 404 Page */
