@@ -134,7 +134,7 @@ footer a {
 }
 
 .facebook i:hover {
-    color: #3b5998 !important;
+    color: #3b5998;
 }
 
 .instagram i:hover {
@@ -144,6 +144,10 @@ footer a {
 .twitter i:hover {
     color: #1da1f2;
 }
+
+.github i:hover {
+    color: #545b62;
+  }
 
 /* 
     Structure 
