@@ -133,6 +133,18 @@ footer a {
     color: #888;
 }
 
+.facebook i:hover {
+    color: #3b5998 !important;
+}
+
+.instagram i:hover {
+    color: #e95950;
+}
+
+.twitter i:hover {
+    color: #1da1f2;
+}
+
 /* 
     Structure 
 */
@@ -161,7 +173,6 @@ footer a {
 }
 
 .text-muted {
-    --bs-text-opacity: 1;
     color: #6c757d !important;
 }
 
