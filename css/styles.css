@@ -334,8 +334,9 @@ footer a {
 
     .logo {
         padding: 0 0.5em;
+        display: none;
     }
-    .menu-toggle{
+    .bar{
       display: flex;
     }
 
