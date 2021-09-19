@@ -27,7 +27,6 @@ img {
     max-width: 100%;
 }
 
-
 /* 
     Main Header, Navigation and Footer
 */
@@ -81,11 +80,45 @@ header {
 }
 
 /* 
+    Navigation Toggle Styles
+*/
+
+.menu_toggle {
+    position: absolute;
+    display: inline-block;
+    /* display: flex; */
+    /* flex-direction: column; */
+    cursor: pointer;
+}
+
+.bar {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .alpha {
+    transform: rotate(-45deg) translate(-10px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bravo {
+    opacity: 0;
+}
+
+.change .charlie {
+    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* 
     Main Content
 */
 
 .hero {
-
     align-items: center;
     text-align: center;
     margin: 3rem 0 !important;
@@ -94,7 +127,6 @@ header {
 .hero-txt {
     margin-bottom: 1.5rem !important;
 }
-
 
 /* 
     Footer Area
@@ -107,7 +139,6 @@ footer {
     margin: 1rem 0;
     /* background-color: #dd3f31; */
 }
-
 
 footer .nav {
     display: flex;
@@ -125,7 +156,6 @@ footer a {
 
 .f-link {
     margin-right: .5rem;
-
 }
 
 .copy {
@@ -147,7 +177,7 @@ footer a {
 
 .github i:hover {
     color: #545b62;
-  }
+}
 
 /* 
     Structure 
@@ -291,14 +321,30 @@ footer a {
 /* Media Quiries */
 
 @media only screen and (max-width: 280px) {
-
-    body,
-    .four_p {
+    body, .four_p {
         width: 95%;
     }
-
     .four_h1 {
         font-size: 1.5em;
         margin: 0 0 0.3em;
     }
 }
+
+@media (max-width: 480px){
+
+    .logo {
+        padding: 0 0.5em;
+    }
+    .menu-toggle{
+      display: flex;
+    }
+
+    .nav ul {
+        padding-top: 3em;
+        flex-direction: column;
+
+    }
+    .nav li {
+        padding-bottom: 2em;
+        text-align: center;
+    }
