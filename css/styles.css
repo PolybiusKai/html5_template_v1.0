@@ -33,6 +33,7 @@ img {
 */
 
 header {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
